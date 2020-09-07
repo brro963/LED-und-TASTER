@@ -21,7 +21,7 @@ class Button:
         self.status = False
         GPIO.setup(pin, GPIO.IN)
 
-    def BUTTON_abchecken(self):
+    def BUTTON_abchecken(self):#Check button
         if GPIO.input(self.Button_number):
            self.status = True
            return True
